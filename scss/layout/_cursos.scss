@@ -1,4 +1,4 @@
-@use '../utilities/variables' as *;
+@use "../utilities/variables" as *;
 /* ====  CURSOS  ==== */
 .header__txt--cur {
   background-color: $secundario;
@@ -8,16 +8,18 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
-}
-.cursos__info {
-  grid-column: 1 / 2;
-}
-.cursos__img {
-  grid-column: 2 / 3;
-  padding-top: 3rem;
-  padding-bottom: 2rem;
-}
-.img__jugo {
-  height: 20rem;
-  border-radius: 2rem;
+
+  .cursos__info {
+    grid-column: 1 / 2;
+  }
+  .cursos__img {
+    grid-column: 2 / 3;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+
+    .img__jugo {
+      height: 20rem;
+      border-radius: 2rem;
+    }
+  }
 }
